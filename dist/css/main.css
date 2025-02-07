@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @layer base, components, utilities;
 @layer base {
   /*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -167,19 +167,15 @@
     --black-hover: rgb(25.5, 25.5, 25.5);
     --white: #fff;
     --white-hover: white;
-    --grey: #8f8e8e;
-    --grey-hover: rgb(154.2, 153.3, 153.3);
-    --l-grey: #ececec;
-    --l-grey-hover: rgb(237.9, 237.9, 237.9);
-    --d-grey: #404040;
-    --d-grey-hover: rgb(83.1, 83.1, 83.1);
-    --l-brown: #73423f;
-    --l-brown-hover: rgb(136.4494382022, 78.3101123596, 74.7505617978);
-    --l-gold: #e5ab5d;
-    --l-gold-hover: rgb(231.6, 179.4, 109.2);
+    --blue: #0d6efd;
+    --blue-hover: rgb(37.2, 124.5, 253.2);
+    --red: #dc3545;
+    --red-hover: rgb(223.5, 73.2, 87.6);
+    --grey: #6c757d;
+    --grey-hover: rgb(121.2553648069, 130.8849785408, 139.4446351931);
   }
   body {
-    font-family: "Libre Baskerville", serif;
+    font-family: "Inter", sans-serif;
   }
 }
 @layer utilities {
@@ -507,35 +503,23 @@
   .border-white {
     border-color: var(--white);
   }
+  .bg-blue {
+    background-color: var(--blue);
+  }
+  .border-blue {
+    border-color: var(--blue);
+  }
+  .bg-red {
+    background-color: var(--red);
+  }
+  .border-red {
+    border-color: var(--red);
+  }
   .bg-grey {
     background-color: var(--grey);
   }
   .border-grey {
     border-color: var(--grey);
-  }
-  .bg-l-grey {
-    background-color: var(--l-grey);
-  }
-  .border-l-grey {
-    border-color: var(--l-grey);
-  }
-  .bg-d-grey {
-    background-color: var(--d-grey);
-  }
-  .border-d-grey {
-    border-color: var(--d-grey);
-  }
-  .bg-l-brown {
-    background-color: var(--l-brown);
-  }
-  .border-l-brown {
-    border-color: var(--l-brown);
-  }
-  .bg-l-gold {
-    background-color: var(--l-gold);
-  }
-  .border-l-gold {
-    border-color: var(--l-gold);
   }
 }
 .grid {
@@ -581,112 +565,6 @@
 }
 
 @layer components {
-  .redirectCo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1.5rem 1rem;
-  }
-  .redirectCo p {
-    margin: 0 0.3125rem;
-    color: var(--grey);
-  }
-  .redirectCo a {
-    color: var(--d-grey);
-  }
-}
-@layer components {
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .form .input {
-    font-size: inherit;
-    font-family: inherit;
-    color: inherit;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
-    outline: none;
-    padding: 1rem;
-    background-color: var(--l-grey);
-    border-radius: 0.3125rem;
-    margin-bottom: 1.5rem;
-    font-size: 0.625rem;
-    color: var(--grey);
-    text-align: center;
-    width: 18.75rem;
-  }
-  .form .input::placeholder {
-    text-align: center;
-    color: var(--grey);
-  }
-  .form .input[type=date], .form .input[type=password] {
-    color: var(--grey);
-    text-align: center;
-  }
-  .form .input[type=date] {
-    padding-left: 2rem;
-  }
-  .form .input-label {
-    color: var(--grey);
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-  }
-  .form .button {
-    margin-top: 0.625rem;
-    font-size: 0.875rem;
-    width: 18.75rem;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: var(--l-gold);
-    padding: 1.25rem 1rem;
-    color: var(--white);
-  }
-  .form .button:hover {
-    background-color: var(--l-gold-hover);
-  }
-}
-@layer components {
-  .socials {
-    margin-top: 2rem;
-  }
-  .socials p {
-    font-size: 0.625rem;
-    color: var(--d-grey);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .socials p::before, .socials p::after {
-    content: "";
-    border-bottom: 0.0625rem solid var(--grey);
-    flex: 1 0 auto;
-    height: 0.0625rem;
-    margin: 0 0.625rem;
-    max-width: 6.25rem;
-  }
-  .socials-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .socials-img img {
-    width: 2rem;
-    height: 2rem;
-    margin: 0 0.75rem;
-  }
-}
-@layer components {
   .button {
     text-decoration: none;
     color: inherit;
@@ -715,16 +593,22 @@
     line-height: 1rem;
   }
   .button-primary {
-    background-color: var(--l-gold);
+    background-color: var(--blue);
   }
   .button-primary:hover {
-    background-color: var(--l-gold-hover);
+    background-color: var(--blue-hover);
   }
   .button-secondary {
-    background-color: var(--l-brown);
+    background-color: var(--grey);
   }
   .button-secondary:hover {
-    background-color: var(--l-brown-hover);
+    background-color: var(--grey-hover);
+  }
+  .button-danger {
+    background-color: var(--red);
+  }
+  .button-danger:hover {
+    background-color: var(--red-hover);
   }
 }
 @layer components {
