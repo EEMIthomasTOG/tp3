@@ -620,6 +620,7 @@
     margin-bottom: 1.5rem;
     font-size: 0.625rem;
     color: var(--grey);
+    text-align: center;
     width: 18.75rem;
   }
   .form .input::placeholder {
