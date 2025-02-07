@@ -619,6 +619,7 @@
     border-radius: 0.3125rem;
     margin-bottom: 1.5rem;
     font-size: 0.625rem;
+    color: var(--grey);
     width: 18.75rem;
   }
   .form .input::placeholder {
