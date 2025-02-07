@@ -25,18 +25,24 @@
 		}
 		// classes modificatrices de couleur
 		&-primary {
-			background-color: var(--l-gold);
+			background-color: var(--blue);
 			&:hover {
-				background-color: var(--l-gold-hover);
-			} 
-		}
-
-		&-secondary {
-			background-color: var(--l-brown);
-			&:hover {
-				background-color: var(--l-brown-hover);
+				background-color: var(--blue-hover);
 			}
 		}
 
+		&-secondary {
+			background-color: var(--grey);
+			&:hover {
+				background-color: var(--grey-hover);
+			}
+		}
+
+		&-danger {
+			background-color: var(--red);
+			&:hover {
+				background-color: var(--red-hover);
+			}
+		}
 	}
 }
