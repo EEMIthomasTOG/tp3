@@ -1,0 +1,52 @@
+@use "../partials/functions" as f;
+@use "../partials/variables" as v;
+@use "../partials/mixins" as m;
+@layer components {
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .input {
+            @include m.resetInput;
+            padding: f.rem(16);
+            background-color: var(--l-grey);
+            border-radius: f.rem(5);
+            margin-bottom: f.rem(24);
+            font-size: f.rem(10);
+            width: f.rem(300);
+            &::placeholder {
+                text-align: center;
+                color: var(--grey);
+            }
+            &[type="date"],&[type="password"] {
+                color: var(--grey);
+                text-align: center;
+            }   
+            &[type="date"]{
+                padding-left: f.rem(32);
+            }    
+            &-label{
+                color: var(--grey);
+                font-size: f.rem(16);
+                font-weight: 400;
+                margin-bottom: f.rem(8);
+                text-transform: uppercase;
+            }
+        }
+		.button {
+            margin-top: f.rem(10);
+            font-size: f.rem(14);
+            width: f.rem(300);
+			border: none;
+			border-radius: f.rem(8);
+			background-color: var(--l-gold);
+			padding: f.rem(20) f.rem(16);	
+			color: var(--white);
+			&:hover {
+				background-color: var(--l-gold-hover);
+			} 
+		}
+    }
+}
