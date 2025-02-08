@@ -1,10 +1,17 @@
+@use "../partials/functions" as f;
+
 .grid {
 	display: grid;
-	gap: 1rem;
+	@for $i from 1 through 12 {
+		.gap-#{$i} {
+			gap: #{$i * f.rem(8)};
+		}
+	}
 	grid-template-columns: repeat(12, 1fr);
 	@for $i from 1 through 12 {
 		.col-#{$i} {
 			grid-column: span $i;
 		}
 	}
+	
 }
