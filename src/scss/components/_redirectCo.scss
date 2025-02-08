@@ -3,10 +3,6 @@
 @use "../partials/mixins" as m;
 @layer components {
 	.redirectCo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
 		padding: f.rem(24) f.rem(16);
         p{
             margin:0 f.rem(5);

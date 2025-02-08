@@ -26,6 +26,14 @@
 		.p-#{$i} {
 			padding: $i * $increment;
 		}
+		.px-#{$i} {
+			padding-left: $i * $increment;
+			padding-right: $i * $increment;
+		}
+		.py-#{$i} {
+			padding-top: $i * $increment;
+			padding-bottom: $i * $increment;
+		}
 		.radius-#{$i} {
 			border-radius: $i * $increment;
 		}

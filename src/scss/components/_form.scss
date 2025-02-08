@@ -3,11 +3,7 @@
 @use "../partials/mixins" as m;
 @layer components {
     .form{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
         .input {
             @include m.resetInput;
             padding: f.rem(16);
