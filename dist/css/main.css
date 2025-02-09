@@ -207,6 +207,9 @@
   .radius-1 {
     border-radius: 0.25rem;
   }
+  .max-w-1 {
+    max-width: 6.25rem;
+  }
   .mt-1 {
     margin-top: 0.25rem;
   }
@@ -253,6 +256,9 @@
   }
   .radius-2 {
     border-radius: 0.5rem;
+  }
+  .max-w-2 {
+    max-width: 12.5rem;
   }
   .mt-2 {
     margin-top: 0.5rem;
@@ -301,6 +307,9 @@
   .radius-3 {
     border-radius: 0.75rem;
   }
+  .max-w-3 {
+    max-width: 18.75rem;
+  }
   .mt-3 {
     margin-top: 0.75rem;
   }
@@ -347,6 +356,9 @@
   }
   .radius-4 {
     border-radius: 1rem;
+  }
+  .max-w-4 {
+    max-width: 25rem;
   }
   .mt-4 {
     margin-top: 1rem;
@@ -395,6 +407,9 @@
   .radius-5 {
     border-radius: 1.25rem;
   }
+  .max-w-5 {
+    max-width: 31.25rem;
+  }
   .mt-5 {
     margin-top: 1.25rem;
   }
@@ -441,6 +456,9 @@
   }
   .radius-6 {
     border-radius: 1.5rem;
+  }
+  .max-w-6 {
+    max-width: 37.5rem;
   }
   .mt-6 {
     margin-top: 1.5rem;
@@ -489,6 +507,9 @@
   .radius-7 {
     border-radius: 1.75rem;
   }
+  .max-w-7 {
+    max-width: 43.75rem;
+  }
   .mt-7 {
     margin-top: 1.75rem;
   }
@@ -535,6 +556,9 @@
   }
   .radius-8 {
     border-radius: 2rem;
+  }
+  .max-w-8 {
+    max-width: 50rem;
   }
   .mt-8 {
     margin-top: 2rem;
