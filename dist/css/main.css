@@ -651,45 +651,90 @@
 .grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(12, 1fr);
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
 }
 .grid .col-1 {
   grid-column: span 1;
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
 .grid .col-2 {
   grid-column: span 2;
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 .grid .col-3 {
   grid-column: span 3;
 }
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
 .grid .col-4 {
   grid-column: span 4;
+}
+.grid-cols-5 {
+  grid-template-columns: repeat(5, 1fr);
 }
 .grid .col-5 {
   grid-column: span 5;
 }
+.grid-cols-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
 .grid .col-6 {
   grid-column: span 6;
+}
+.grid-cols-7 {
+  grid-template-columns: repeat(7, 1fr);
 }
 .grid .col-7 {
   grid-column: span 7;
 }
+.grid-cols-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
 .grid .col-8 {
   grid-column: span 8;
+}
+.grid-cols-9 {
+  grid-template-columns: repeat(9, 1fr);
 }
 .grid .col-9 {
   grid-column: span 9;
 }
+.grid-cols-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
 .grid .col-10 {
   grid-column: span 10;
 }
+.grid-cols-11 {
+  grid-template-columns: repeat(11, 1fr);
+}
 .grid .col-11 {
   grid-column: span 11;
+}
+.grid-cols-12 {
+  grid-template-columns: repeat(12, 1fr);
 }
 .grid .col-12 {
   grid-column: span 12;
 }
 
+@layer components {
+  .services {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services > :first-child {
+    grid-column: span 2;
+  }
+}
 .flex {
   display: flex;
 }
