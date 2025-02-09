@@ -1,0 +1,20 @@
+@use "../partials/functions" as f;
+
+.flex {
+	display: flex;
+	@for $i from 1 through 12 {
+		&-gap-#{$i} {
+			gap: #{$i * f.rem(8)};
+		}
+	}
+    &-col {
+        flex-direction: column;
+    }
+    &-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+	
+}
