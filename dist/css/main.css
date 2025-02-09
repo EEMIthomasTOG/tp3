@@ -179,6 +179,27 @@
     --l-gold: #e5ab5d;
     --l-gold-hover: rgb(231.6, 179.4, 109.2);
   }
+  :root .text-black {
+    color: var(--black);
+  }
+  :root .text-white {
+    color: var(--white);
+  }
+  :root .text-grey {
+    color: var(--grey);
+  }
+  :root .text-l-grey {
+    color: var(--l-grey);
+  }
+  :root .text-d-grey {
+    color: var(--d-grey);
+  }
+  :root .text-l-brown {
+    color: var(--l-brown);
+  }
+  :root .text-l-gold {
+    color: var(--l-gold);
+  }
   body {
     font-family: "Libre Baskerville", serif;
   }

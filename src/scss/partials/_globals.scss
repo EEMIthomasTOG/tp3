@@ -10,6 +10,9 @@
 			// pour éclaircir une couleur : utiliser color.scale contenu dans le module sass:color
 			--#{$name}: #{$value};
 			--#{$name}-hover: #{color.scale($value, $lightness: 10%)};
+			.text-#{$name} {
+				color: var(--#{$name});
+			}
 		}
 	}
 
