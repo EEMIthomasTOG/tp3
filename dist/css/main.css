@@ -178,6 +178,8 @@
     --l-brown-hover: rgb(136.4494382022, 78.3101123596, 74.7505617978);
     --l-gold: #e5ab5d;
     --l-gold-hover: rgb(231.6, 179.4, 109.2);
+    --l-black: #211f20;
+    --l-black-hover: rgb(55.996875, 52.603125, 54.3);
   }
   :root .text-black {
     color: var(--black);
@@ -199,6 +201,9 @@
   }
   :root .text-l-gold {
     color: var(--l-gold);
+  }
+  :root .text-l-black {
+    color: var(--l-black);
   }
   body {
     font-family: "Libre Baskerville", serif;
@@ -647,6 +652,12 @@
   .border-l-gold {
     border-color: var(--l-gold);
   }
+  .bg-l-black {
+    background-color: var(--l-black);
+  }
+  .border-l-black {
+    border-color: var(--l-black);
+  }
 }
 .grid {
   display: grid;
@@ -733,6 +744,37 @@
   }
   .services > :first-child {
     grid-column: span 2;
+  }
+}
+@layer components {
+  .commandes-box {
+    background-color: var(--l-grey);
+    width: 21.875rem;
+    height: 21.875rem;
+    border-radius: 1.5rem;
+    text-align: center;
+  }
+  .commandes-box-title {
+    width: 80%;
+    padding: 1.5625rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    background-color: var(--l-black);
+    color: var(--white);
+    text-transform: uppercase;
+    transform: translate(0, -1.875rem);
+    text-align: center;
+    margin: auto;
+  }
+  .commandes-box ul {
+    margin: 0;
+    text-align: justify;
+    max-height: 15.625rem;
+    overflow-y: auto;
+  }
+  .commandes-box li {
+    padding-left: 0.625rem;
+    margin: 0.625rem 0;
   }
 }
 .flex {
