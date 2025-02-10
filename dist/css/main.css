@@ -891,6 +891,42 @@
   }
 }
 @layer components {
+  .sidebar {
+    display: flex;
+    background-color: blue;
+    width: 21.875rem;
+    height: 100vh;
+  }
+  .sidebar-list {
+    padding: 1.5625rem;
+    list-style-type: none;
+    background-color: var(--l-brown);
+    margin: 0;
+  }
+  .sidebar-list > * {
+    margin: auto;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    position: relative;
+  }
+  .sidebar-list li {
+    margin-bottom: 3.125rem;
+  }
+  .sidebar-list li:last-child {
+    margin-bottom: 0;
+  }
+  .sidebar-list img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3.125rem;
+  }
+}
+@layer components {
   .button {
     text-decoration: none;
     color: inherit;

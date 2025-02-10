@@ -1,33 +1,38 @@
 @use "../partials/variables" as v;
 @use "../partials/functions" as f;
+@use "../partials/fonts" as fonts;
 @layer components {
 	.sidebar {
 		display: flex;
-		aspect-ratio: 100 / 42;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-		position: relative;
-		&-text {
-			padding: 5%;
-			&::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right: 0;
-				background-color: var(--black);
-				opacity: 0.5;
-			}
-			& > * {
+		background-color: blue;
+		width: f.rem(350);
+		height: 100vh;
+		&-list {
+			padding:f.rem(25);
+			list-style-type: none;
+			background-color: var(--l-brown);
+			margin:0;
+			& > * { 
 				margin: auto;
 				font-weight: 700;
 				color: var(--white);
 				font-size: f.rem(48);
-				line-height: f.rem(60);
+				line-height: f.rem(24);
 				text-align: center;
+				text-transform: uppercase;
+				font-size: f.rem(16);
 				position: relative;
+			}
+			li{
+				margin-bottom: f.rem(50);
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+			img{
+				width: 100%;
+				height: auto;
+				margin-bottom: f.rem(50);
 			}
 		}
 	}
