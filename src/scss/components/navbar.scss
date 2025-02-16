@@ -1,0 +1,31 @@
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+@layer components {
+	.navbar {
+        background-color: var(--l-black);
+        color: var(--white);
+        padding: f.rem(16) 0;
+		&-brand {
+            font-size: f.rem(24);
+            font-weight: bold;
+            color: var(--white);
+            text-decoration: none;
+        }
+        &-menu{
+            list-style: none;
+            display: flex;
+            gap: f.rem(32);
+            margin: 0;
+            padding: 0;
+            li{
+                margin: 0;
+            }
+            a{
+            color: var(--white);
+            text-decoration: none;
+            font-size: f.rem(16);
+            font-weight: 500;
+            }
+        }
+	}
+}
