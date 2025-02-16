@@ -19,6 +19,13 @@
             padding: 0;
             li{
                 margin: 0;
+                @each $name, $screenSize in v.$breakpoints {
+                    @media screen and (max-width: $screenSize) { 
+                        @if ($name == "sm") {
+                            margin: f.rem(5) 0;
+                        }
+                    }
+                }
             }
             a{
             color: var(--white);
@@ -26,6 +33,15 @@
             font-size: f.rem(16);
             font-weight: 500;
             }
+        
+        @each $name, $screenSize in v.$breakpoints {
+			@media screen and (max-width: $screenSize) { 
+				@if ($name == "sm") {
+                    display: block;
+				}
+			}
+		}
         }
+
 	}
 }
