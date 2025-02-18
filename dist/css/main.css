@@ -180,6 +180,8 @@
     --l-gold-hover: rgb(231.6, 179.4, 109.2);
     --l-black: #211f20;
     --l-black-hover: rgb(55.996875, 52.603125, 54.3);
+    --red: #910000;
+    --red-hover: rgb(181.5, 0, 0);
   }
   :root .text-black {
     color: var(--black);
@@ -205,13 +207,43 @@
   :root .text-l-black {
     color: var(--l-black);
   }
+  :root .text-red {
+    color: var(--red);
+  }
   body {
     font-family: "Libre Baskerville", serif;
   }
 }
 @layer utilities {
   .h-1 {
-    height: 0.25rem;
+    height: 10vh;
+  }
+  .h-2 {
+    height: 20vh;
+  }
+  .h-3 {
+    height: 30vh;
+  }
+  .h-4 {
+    height: 40vh;
+  }
+  .h-5 {
+    height: 50vh;
+  }
+  .h-6 {
+    height: 60vh;
+  }
+  .h-7 {
+    height: 70vh;
+  }
+  .h-8 {
+    height: 80vh;
+  }
+  .h-9 {
+    height: 90vh;
+  }
+  .h-10 {
+    height: 100vh;
   }
   .w-1 {
     width: 0.25rem;
@@ -226,7 +258,15 @@
     padding-left: 0.25rem;
     padding-right: 0.25rem;
   }
+  .mx-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
   .py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  .my-1 {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
   }
@@ -260,9 +300,6 @@
   .pr-1 {
     padding-right: 0.25rem;
   }
-  .h-2 {
-    height: 0.5rem;
-  }
   .w-2 {
     width: 0.5rem;
   }
@@ -276,7 +313,15 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+  .mx-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
   .py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .my-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
@@ -310,9 +355,6 @@
   .pr-2 {
     padding-right: 0.5rem;
   }
-  .h-3 {
-    height: 0.75rem;
-  }
   .w-3 {
     width: 0.75rem;
   }
@@ -326,7 +368,15 @@
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
+  .mx-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
   .py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .my-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
@@ -360,9 +410,6 @@
   .pr-3 {
     padding-right: 0.75rem;
   }
-  .h-4 {
-    height: 1rem;
-  }
   .w-4 {
     width: 1rem;
   }
@@ -376,7 +423,15 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .mx-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .my-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
@@ -410,9 +465,6 @@
   .pr-4 {
     padding-right: 1rem;
   }
-  .h-5 {
-    height: 1.25rem;
-  }
   .w-5 {
     width: 1.25rem;
   }
@@ -426,7 +478,15 @@
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+  .mx-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
   .py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .my-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
@@ -460,9 +520,6 @@
   .pr-5 {
     padding-right: 1.25rem;
   }
-  .h-6 {
-    height: 1.5rem;
-  }
   .w-6 {
     width: 1.5rem;
   }
@@ -476,7 +533,15 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+  .mx-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
   .py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .my-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
@@ -510,9 +575,6 @@
   .pr-6 {
     padding-right: 1.5rem;
   }
-  .h-7 {
-    height: 1.75rem;
-  }
   .w-7 {
     width: 1.75rem;
   }
@@ -526,7 +588,15 @@
     padding-left: 1.75rem;
     padding-right: 1.75rem;
   }
+  .mx-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
   .py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+  .my-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
   }
@@ -560,9 +630,6 @@
   .pr-7 {
     padding-right: 1.75rem;
   }
-  .h-8 {
-    height: 2rem;
-  }
   .w-8 {
     width: 2rem;
   }
@@ -576,7 +643,15 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  .mx-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .my-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
@@ -657,6 +732,12 @@
   }
   .border-l-black {
     border-color: var(--l-black);
+  }
+  .bg-red {
+    background-color: var(--red);
+  }
+  .border-red {
+    border-color: var(--red);
   }
 }
 .grid {
