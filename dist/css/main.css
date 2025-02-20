@@ -1096,6 +1096,10 @@
   .sidebar-list li:last-child {
     margin-bottom: 0;
   }
+  .sidebar-list li a {
+    text-decoration: none;
+    color: white;
+  }
   .sidebar-list img {
     width: 100%;
     height: auto;
