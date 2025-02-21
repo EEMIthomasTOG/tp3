@@ -1,18 +1,20 @@
 @use "../partials/variables" as v;
 @use "../partials/functions" as f;
 @use "../partials/fonts" as fonts;
+
 @layer components {
 	.sidebar {
 		display: flex;
-		background-color: blue;
 		width: f.rem(350);
 		height: 100vh;
+
 		&-list {
-			padding:f.rem(25);
+			padding: f.rem(25);
 			list-style-type: none;
 			background-color: var(--l-brown);
-			margin:0;
-			& > * { 
+			margin: 0;
+
+			&>* {
 				margin: auto;
 				font-weight: 700;
 				color: var(--white);
@@ -23,17 +25,21 @@
 				font-size: f.rem(16);
 				position: relative;
 			}
-			li{
+
+			li {
 				margin-bottom: f.rem(50);
-				&:last-child{
+
+				&:last-child {
 					margin-bottom: 0;
 				}
-				a{
+
+				a {
 					text-decoration: none;
 					color: white;
 				}
 			}
-			img{
+
+			img {
 				width: 100%;
 				height: auto;
 				margin-bottom: f.rem(50);

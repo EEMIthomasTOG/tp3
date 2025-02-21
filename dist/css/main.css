@@ -1069,7 +1069,6 @@
 @layer components {
   .sidebar {
     display: flex;
-    background-color: blue;
     width: 21.875rem;
     height: 100vh;
   }
