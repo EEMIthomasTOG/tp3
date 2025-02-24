@@ -1,0 +1,15 @@
+@layer components {
+    .alert {
+        padding: 1rem;
+        border-radius: var(--radius-2);
+        margin: 1rem 0;
+        &-danger {
+            background-color: var(--red);
+            color: var(--white);
+        }
+        &-success {
+            background-color: var(--l-gold);
+            color: var(--white);
+        }
+      }
+}

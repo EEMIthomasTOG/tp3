@@ -1,0 +1,9 @@
+  @layer components {
+    .card {
+        border: 1px solid var(--l-grey);
+        border-radius: var(--radius-2);
+        padding: 1rem;
+        background-color: var(--white);
+      }
+    
+}
